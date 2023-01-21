@@ -5,53 +5,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
     <title>Jesus Ortega</title>
 </head>
 
-<body>
-    <header>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+        <img src="img/PI_negativo.png" class="float-start" alt="ITSON logo"
+            style="display: block; float: left; height: 100px;">
         <h1>Jesus Ricardo Ortega Sanchez</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-projects">My Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>I am a web developer with experience in HTML, CSS, and JavaScript. I am passionate about creating
-                beautiful and user-friendly websites.</p>
-        </section>
-        <section id="my-projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
+        <p>Ingeniero en Software</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Acerca de mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Series y peliculas favoritas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Contacto</a>
+                </li>
             </ul>
-        </section>
-        <section id="contact-me">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright © 2021 My Name</p>
-    </footer>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid" style="padding:25px 15px; text-align: justify;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Acerca de mi</h2>
+                <h5>Mi foto:</h5>
+                <img class="img-fluid" src="img/me.jpg" alt="Me">
+                <p><strong>Nombre:</strong> Jesus Ricardo Ortega Sanchez</p>
+                <p><strong>Edad:</strong> 21 años</p>
+                <p><strong>Carrera:</strong> Ingeniera en Software</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2>Bienvenido!</h2>
+                <p>Me llamo Jesus Ricardo Ortega Sanchez y soy un estudiante de Ingenieria en Software en el Instituto
+                    Teconologico de Sonora (ITSON).</p>
+                <p>Actualmente estoy encaminandome a terminar mi carrera y poder ejercer como un desarrollador. Mi
+                    experiencia actual es el manejo del lenguaje de programacion Java orientado a objetos y el
+                    desarrollo de paginas web HTML con CSS y Bootstrap.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="container-fluid bg-secondary text-white" style="padding:25px 15px; text-align: justify;">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Videojuegos</h2>
+                <img class="img-fluid" src="img/games.jpg" alt="Mis Hobbies">
+                <p>Me gusta jugar videojuegos en mis ratos libres cada vez que puedo, comenze a jugar videojuegos
+                    aproximadamente a los 7 años de edad. A lo largo de mi vida he jugado una larga variedad de
+                    videojuegos y mis juegos favoritos son: Marvel's Spider-Man, The Binding of Isaac, The Leyend of
+                    Zelda Breath of the Wild y la saga de Call of Duty Zombies.</p>
+
+                <h2 class="mt-5">Anime</h2>
+                <img class="img-fluid" src="img/anime.jpg" alt="Mis Hobbies">
+                <p>En mis ratos libres suelo ver diversos medios de entretenimiento, pero uno de los que suelo consumir
+                    mas es el anime, suelo ver anime y leer manga (comic japones) cada que puedo o salga uno que me
+                    interese. Mis animes favoritos son Mob Psycho 100, Death Note, Evangelion y Bocchi The Rock. Y mis
+                    mangas favoritos son Tokyo Ghoul, Soul Eater y One Piece.</p>
+
+                <h2 class="mt-5">Ver cosas de tecnologia</h2>
+                <img class="img-fluid" src="img/pc.jpg" alt="Mis Hobbies">
+                <p>Cada que puedo me gusta probar e investigar cosas relacionas con la teconlogia, ya sea software o
+                    hardware, me gusta ensamblar computadoras y ver las cosas nuevas que estan saliendo al mercado
+                    respecto al hardware y cada vez que veo algo nuevo que se mire muy llamativo u novedoso siempre
+                    tengo las ganas de querer probarlo para ver que tal o mas bien experimentar la experienca.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Mis hobbies</h2>
+                <img class="img-fluid" src="img/hobbies.jpg" alt="Mis Hobbies">
+                <p>Son mis pasatiempos que suelo hacer cuando tengo tiempo libre</p>
+                <hr class="d-sm-none">
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="container-fluid bg-secondary text-white" style="padding:25px 15px; text-align: justify;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Series y peliculas favoritas</h2>
+                <img class="img-fluid" src="img/SyP.jpg" alt="Mis Hobbies">
+                <p>Estas son mis peliculas y series favoritas</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2>Mis peliculas favoritas</h2>
+                <h5>La trilogia de Spider-Man dirigida por Sam Raimi</h5>
+                <img class="img-fluid" src="img/maxresdefault.jpg" alt="Mis peilculas favoritas">
+                <p>Spider-Man dirigida por Sam Raimi y protagonizado por Tobey Maguire son una de mis sagas de peliculas
+                    favoritas, ya que ademas de ser Spider-Man mi super heroe favorito, son peliculas que marcaron mi
+                    infancia. Ademas, a pesar de contarte la trayectora que lleva nuestro personaje en las peliculas,
+                    siempre nos termina dando multiples mensajes significativos, como: asumir las responsabilidades de
+                    tus acciones, lidiar con la perdida, Siempre es bueno estar dispuesto a pedir ayuda, etc.</p>
+                <h5>Joker</h5>
+                <img class="img-fluid" src="img/joker-joaquin-phoenix.jpg" alt="Mis peilculas favoritas">
+                <p>Joker es una pelicula que me gusta mucho, ya que es una pelicula basada los comics de super heroes
+                    muy distinta a como nos lo habian planteado durante años ya otras producciones de la misma, dando
+                    una perspectiva mas oscura y "realista" a como una persona puede llegar descender al punto de
+                    quiebre o bien a la misma locura. Esta pelicula plasma una critica social de como las mismas
+                    personas dentro de una socidad pueden ser los detonantes o los causantes de que alguien a pesar de
+                    querer tomar el buen camino o las decisiones correctas los empuje y los decienda directamente a
+                    querer tomar acciones oscuras dando nacimiento a personas como el protagonista de esta pelicula.</p>
+                <h5>Spider-Man in to the spider-verse</h5>
+                <img class="img-fluid"
+                    src="img/spider-man-into-the-spider-verse-2-secuela-amy-pascal-novedades-cover.jpg"
+                    alt="Mis peilculas favoritas">
+                <p>Spider-Man in to the spider-verse es una de mis peliculas animadas favoritas, ya que te cuentan el
+                    origen de una version de spider-man no tan conocida como Miles Morales en ese entonces. Ademas del
+                    estilo de animacion que fue revolucionario y muy del estilo de los comics, nos a unos mensajes que
+                    son muy importantes en su gran historia que tiene, nos deja en claro que todos podemos ser un
+                    spider-man en el sentido metaforico, ya que todos tenemos problemas y responsabilidades con las
+                    cuales tenemos que lidiar, y la respuesta a ello es "no importa cuantas veces caiga, siempre voy a
+                    levantarme y a seguir luchando" y tambien "nunca vas saber cuando vas a estar listo, la vida es un
+                    salto de fe y siempre tienes que confiar en ti mismo y en tus capacidades".</p>
+
+                <h2 class="mt-5">Mis series favoritas</h2>
+                <h5>Invincible</h5>
+                <img class="img-fluid" src="img/invincible.jpg" alt="Mis series favoritas">
+                <p>Invincible, basado en los comics del mismo nombre es una serie animada dirigido a un publico adultos.
+                    Invencible podría haber sido fácilmente poco más que una parodia de otros superhéroes, en muchos de
+                    los que aparecen en la serie no podría ser más evidente cuál es el modelo original, incluyendo
+                    tambien gore en la serie. Para mi, es una de las mejores series de superhéroes de los últimos años
+                    es que también tiene aun mucha histora que contar en futuras temporadas.</p>
+                <h5>Malcolm el del medio</h5>
+                <img class="img-fluid" src="img/malcolm.jpg" alt="Mis series favoritas">
+                <p>Malcolm el del medio es una serie de comedia donde nos cuenta la historia de una familia disfuncional
+                    como la de Malcolm, esta serie tiene diversas hisotrias comicas e incluso con mensajes que ayudan a
+                    crecer a los personajes. Esta serie me gusta mucho principalmente por la comedia y las situaciones
+                    en las que entran los personajes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4" class="container-fluid bg-dark text-white" style="padding:25px 15px; text-align: justify;">
+        <h2>Contactame</h2>
+        <p>Si deseas contactarte conmigo <a href="mailto: jesus.ortega216703@potros.itson.edu.mx?subject=Contacto">escribeme directamente desde aqui.</a></p>
+    <div class="mt-5 p-4 bg-dark text-white text-center">&copy;Jesus Ricardo Ortega Sanchez</div>
 </body>
 
 </html>
